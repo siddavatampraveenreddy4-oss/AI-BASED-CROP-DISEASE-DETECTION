@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Detection</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #FF9800, #F57C00);
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            color: black;
+        }
+
+        img {
+            width: 600px;
+            border-radius: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #FF9800;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #E65100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📷 Live Disease Detection</h1>
+
+    <div class="box">
+        <img src="{{ url_for('video') }}">
+        <br>
+        <a href="/">
+            <button>⬅ Back to Home</button>
+        </a>
+    </div>
+
+</body>
+</html>

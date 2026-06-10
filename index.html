@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Disease Detection</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background: white;
+            color: black;
+            padding: 30px;
+            border-radius: 15px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin: 15px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            background: #388E3C;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🌿 Crop Disease Detection</h1>
+
+    <div class="container">
+        <h3>Upload Leaf Image</h3>
+
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required><br>
+            <button type="submit">Predict Disease</button>
+        </form>
+
+        <hr>
+
+        <h3>OR</h3>
+
+        <a href="/webcam">
+            <button>📷 Live Webcam Detection</button>
+        </a>
+    </div>
+
+</body>
+</html>
